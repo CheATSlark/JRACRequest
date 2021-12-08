@@ -1,0 +1,30 @@
+{
+  "name": "JRACRequest",
+  "version": "0.1.0",
+  "summary": "A short description of JRACRequest.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/slark/JRACRequest",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "slark": "jruijqx@163.com"
+  },
+  "source": {
+    "git": "https://github.com/slark/JRACRequest.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "JRACRequest/Classes/*.{h,m}",
+  "dependencies": {
+    "ReactiveObjC": [
+
+    ],
+    "YTKNetwork": [
+
+    ]
+  }
+}

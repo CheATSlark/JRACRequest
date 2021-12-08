@@ -7,12 +7,16 @@
 //
 
 #import "JRACAppDelegate.h"
+#import "JRBaseRequest.h"
 
 @implementation JRACAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    YTKNetworkConfig *config = [YTKNetworkConfig sharedConfig];
+    config.debugLogEnabled = YES;
+    config.baseUrl = @"http://adev.voiceseix.com";
     return YES;
 }
 

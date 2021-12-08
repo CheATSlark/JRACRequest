@@ -1,0 +1,6 @@
+framework module Pods_JRACRequest_Example {
+  umbrella header "Pods-JRACRequest_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

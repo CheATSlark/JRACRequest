@@ -1,0 +1,6 @@
+framework module JRACRequest {
+  umbrella header "JRACRequest-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -25,10 +25,12 @@
         _requset = [[JRACDemoRequest alloc] init];
         @weakify(self)
         _loadDataCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
-//            JRACDemoRequest *demoRequest =
             @strongify(self)
-            return  [[[self->_requset rac_signal] doNext:^(id  _Nullable x) {
-                
+            return  [[[[self->_requset rac_signal] doNext:^(id  _Nullable x) {
+                    // 副作用区 便于观察信号数据
+            }] map:^id _Nullable(id  _Nullable value) {
+                // 信号转换，可以做模型切换
+                return  @"xxx";
             }] materialize];;
         }];
 

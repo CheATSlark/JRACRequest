@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "A short description of JRACRequest.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/slark/JRACRequest",
+  "homepage": "https://github.com/CheATSlark/JRACRequest",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "slark": "jruijqx@163.com"
   },
   "source": {
-    "git": "https://github.com/slark/JRACRequest.git",
+    "git": "https://github.com/CheATSlark/JRACRequest.git",
     "tag": "0.1.0"
   },
   "platforms": {

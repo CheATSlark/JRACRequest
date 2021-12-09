@@ -10,7 +10,7 @@
 // 获取服务器响应状态码 key
 NSString *const JR_BaseRequest_StatusCodeKey = @"code";
 // 服务器响应数据成功状态码 value
-NSInteger const JR_BaseRequest_SuccessCodeKey = 0;
+NSInteger const JR_BaseRequest_SuccessCodeKey = 200;
 // 获取服务器响应状态信息 key
 NSString *const JR_BaseRequest_StatusMsgKey = @"msg";
 // 获取服务器响应数据 key
@@ -65,32 +65,5 @@ NSString *const JR_BaseRequest_DataKey = @"data";;
     return jsonResponse;
     
 }
-
-#pragma mark - utility额外参数
-//增加额外的通用参数
-- (NSDictionary *)addCommomParameters:(NSDictionary *)originParams {
-    @autoreleasepool {
-        NSMutableDictionary* mdict = nil;
-        if ([originParams respondsToSelector:@selector(setObject:forKey:)]) {
-            mdict = (NSMutableDictionary*)originParams;
-        }else{
-            mdict = [NSMutableDictionary dictionaryWithDictionary:originParams];
-        }
-        
-//        [mdict setObject:gxxSvrProtocolVer forKey:@"ver"];
-//        [mdict setObject:gxxAppID forKey:@"appid"];
-//        [mdict setObject:gxxAppVer forKey:@"appver"];
-//        [mdict setObject:gxxLanguage forKey:@"lang"];
-//        [mdict setObject:gxxAppPlatform forKey:@"platform"];
-//        [mdict setObject:gxxChannel forKey:@"channel"];
-        
-        //add check token
-//        NSString* tk = [self genTokenWithParameters:mdict];
-//        [mdict setObject:tk forKey:@"tk"];
-        
-        return mdict;
-    }
-}
-
 
 @end

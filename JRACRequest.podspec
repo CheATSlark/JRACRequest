@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'JRACRequest/Classes/*.{h,m}'
-  
+  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
   # s.resource_bundles = {
   #   'JRACRequest' => ['JRACRequest/Assets/*.png']
   # }

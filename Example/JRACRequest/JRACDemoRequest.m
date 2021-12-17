@@ -7,9 +7,17 @@
 //
 
 #import "JRACDemoRequest.h"
+#import "AFURLRequestSerialization.h"
 
 @implementation JRACDemoRequest
-
+- (AFConstructingBlock)constructingBodyBlock{
+    
+    return  nil;
+//    return  ^(id <AFMultipartFormData> formData) {
+//        [formData appendPartWithFileData:[[NSData alloc] init] name:@"xx" fileName:@"xx" mimeType:@"image/jpg/png"];
+//        
+//    };
+}
 - (NSString *)requestUrl {
     
     return  @"/api/v1/trace/record/sendTraceRecord";
